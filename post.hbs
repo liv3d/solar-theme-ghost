@@ -9,5 +9,22 @@
 
     <p class="meta">Posted on <span class="postdate">{{date format="MMM Do, YYYY"}}</span></p>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+    <div class="fb-like" data-href="https://liv3d.eu{{url}}" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+
+    <br />
+
+    <div class="fb-comments" data-href="http://liv3d.eu{{url}}" data-width="500px" data-numposts="5" data-colorscheme="light"></div>
+
 </article>
 {{/post}}
